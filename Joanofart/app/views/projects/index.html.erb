@@ -1,0 +1,6 @@
+<h1>Artwork</h1>
+
+<% @projects.each do |project| %>
+	<%= project.name %>
+	<%= image_tag project.avatar.url(:medium) %>
+<% end %>

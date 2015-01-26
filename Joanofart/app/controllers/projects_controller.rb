@@ -10,7 +10,6 @@ class ProjectsController < ApplicationController
   end
 
   def new
-    binding.pry
     @project = Project.new
   end
 
@@ -55,7 +54,7 @@ class ProjectsController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:name, :type, :user_id, :avatar)
+    params.require(:project).permit(:name, :category, :user_id, :avatar)
   end
 
 end
