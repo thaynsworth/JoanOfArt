@@ -41,3 +41,5 @@ gem 'spring',        group: :development
 gem "paperclip", "~> 4.2"
 
 gem "bcrypt"
+
+gem "pry"

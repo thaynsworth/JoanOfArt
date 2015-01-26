@@ -1,4 +1,5 @@
 class ProjectsController < ApplicationController
+  include SessionsHelper
 
   def index
     @projects = Project.all
@@ -9,6 +10,7 @@ class ProjectsController < ApplicationController
   end
 
   def new
+    binding.pry
     @project = Project.new
   end
 
