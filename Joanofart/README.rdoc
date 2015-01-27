@@ -3,8 +3,7 @@
 ToDo:
 
 - PSQL - might need to add username/password to database.yml?
-- Set up SQL database on DigitalOcean?
-- Sessions 
+- Set up SQL database on DigitalOcean? 
 - STYLE - Skeleton? Burbon?
 
 This README would normally document whatever steps are necessary to get the

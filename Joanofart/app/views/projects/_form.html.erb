@@ -1,0 +1,25 @@
+<%= form_for @project do |f| %>
+	
+  <div>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+    <div>
+      <%= f.label :category %><br>
+      <%= f.text_field :category %>
+    </div>
+  <div>
+    <% if @project.avatar.exists? %>
+      <%= avatar_tag @project.avatar.url %>
+    <% end %>
+    <%= f.label :avatar, "Attach an Image of your Project" %><br>
+    <%= f.file_field :avatar %>
+  </div>
+ 
+  <input type='hidden' name='project[user_id]' value='<%= current_user.id %>' />
+ 
+  <div>
+    <%= f.submit %>
+  </div>	
+
+<% end %>
