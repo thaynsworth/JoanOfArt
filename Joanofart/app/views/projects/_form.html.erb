@@ -4,10 +4,14 @@
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
-    <div>
-      <%= f.label :category %><br>
-      <%= f.text_field :category %>
-    </div>
+    <%= f.label :category %>
+    <select name="project[category]">
+      <option value="flowers">Flowers</option>
+      <option value="animals">Animals</option>
+      <option value="landscapes">Landscapes</option>
+      <option value="greeting cards">Greeting Cards</option>
+      <option value="childrens books">Children's Books</option>
+    </select>
   <div>
     <% if @project.avatar.exists? %>
       <%= avatar_tag @project.avatar.url %>
