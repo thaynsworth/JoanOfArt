@@ -2,6 +2,7 @@ class ProjectsController < ApplicationController
   include SessionsHelper
 
   def index
+    binding.pry
     @projects = Project.all
   end
 
