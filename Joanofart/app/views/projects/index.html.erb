@@ -11,3 +11,24 @@
 	<%= flower.name %>
 	<%= image_tag flower.avatar.url(:medium) %>
 <% end %>
+
+<h1>Landscapes</h1>
+
+<% @landscapes.each do |landscape| %>
+	<%= landscape.name %>
+	<%= image_tag landscape.avatar.url(:medium) %>
+<% end %>
+
+<h1>Greeting Cards</h1>
+
+<% @greeting.each do |greeting| %>
+	<%= greeting.name %>
+	<%= image_tag greeting.avatar.url(:medium) %>
+<% end %>
+
+<h1>Children's Books</h1>
+
+<% @books.each do |book| %>
+	<%= book.name %>
+	<%= image_tag book.avatar.url(:medium) %>
+<% end %>
