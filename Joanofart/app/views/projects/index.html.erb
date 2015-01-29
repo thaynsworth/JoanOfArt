@@ -1,6 +1,13 @@
-<h1>Artwork</h1>
+<h1>Animals</h1>
 
-<% @projects.each do |project| %>
-	<%= project.name %>
-	<%= image_tag project.avatar.url(:medium) %>
+<% @animals.each do |animal| %>
+	<%= animal.name %>
+	<%= image_tag animal.avatar.url(:medium) %>
+<% end %>
+
+<h1>Flowers</h1>
+
+<% @flowers.each do |flower| %>
+	<%= flower.name %>
+	<%= image_tag flower.avatar.url(:medium) %>
 <% end %>

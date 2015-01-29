@@ -2,8 +2,8 @@ class ProjectsController < ApplicationController
   include SessionsHelper
 
   def index
-    binding.pry
-    @projects = Project.all
+    @flowers = Project.where(category: "flowers")
+    @animals = Project.where(category: "animals")
   end
 
   def show
