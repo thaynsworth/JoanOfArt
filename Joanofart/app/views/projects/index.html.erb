@@ -1,34 +1,21 @@
-<h1>Animals</h1>
+<div class="row">
+	<div class="offset-by-one column" id="project-nav">
+		<div class="two columns">Flowers</div>
+		<div class="two columns">Animals</div>
+		<div class="two columns">Landscapes</div>
+		<div class="two columns">Greeting Cards</div>
+		<div class="two columns">Children's Books</div>
+	</div>
+</div>
 
-<% @animals.each do |animal| %>
-	<%= animal.name %>
-	<%= image_tag animal.avatar.url(:medium) %>
-<% end %>
-
-<h1>Flowers</h1>
-
-<% @flowers.each do |flower| %>
-	<%= flower.name %>
-	<%= image_tag flower.avatar.url(:medium) %>
-<% end %>
-
-<h1>Landscapes</h1>
-
-<% @landscapes.each do |landscape| %>
-	<%= landscape.name %>
-	<%= image_tag landscape.avatar.url(:medium) %>
-<% end %>
-
-<h1>Greeting Cards</h1>
-
-<% @greeting.each do |greeting| %>
-	<%= greeting.name %>
-	<%= image_tag greeting.avatar.url(:medium) %>
-<% end %>
-
-<h1>Children's Books</h1>
-
-<% @books.each do |book| %>
-	<%= book.name %>
-	<%= image_tag book.avatar.url(:medium) %>
-<% end %>
+<div id="projects">
+	<div class="row" id="animals">
+		<h1>Animals</h1>
+		<div>
+			<% @animals.each do |animal| %>
+				<%= image_tag animal.avatar.url(:medium) %>
+				<p><%= animal.name %></p>
+			<% end %>
+		</div>	
+	</div>
+</div>
