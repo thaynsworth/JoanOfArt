@@ -1,21 +1,30 @@
-<div class="row">
-	<div class="offset-by-one column" id="project-nav">
-		<div class="two columns">Flowers</div>
-		<div class="two columns">Animals</div>
-		<div class="two columns">Landscapes</div>
-		<div class="two columns">Greeting Cards</div>
-		<div class="two columns">Children's Books</div>
+<div class="container">	
+	<div class="row">
+		<div class="offset-by-one column" id="project-nav">
+			<div class="two columns">Flowers</div>
+			<div class="two columns" id="animal-button">Animals</div>
+			<div class="two columns">Landscapes</div>
+			<div class="two columns">Greeting Cards</div>
+			<div class="two columns">Children's Books</div>
+		</div>
 	</div>
 </div>
 
-<div id="projects">
-	<div class="row" id="animals">
-		<h1>Animals</h1>
-		<div>
-			<% @animals.each do |animal| %>
-				<%= image_tag animal.avatar.url(:medium) %>
-				<p><%= animal.name %></p>
-			<% end %>
-		</div>	
-	</div>
-</div>
+
+<table class="container" id="projects">
+  <thead class="row">
+    <tr>
+      <th>Animals</th>
+    </tr>
+  </thead>
+  <tbody class="row">
+  	<tr>
+	    <td class="offset-by-one four columns">
+	    <% @animals.each do |animal| %>	
+	    	<%=link_to image_tag(animal.avatar.url(:medium)), animal.avatar.url(:original), :popup=>['original_image', 'height=700,width=900'] %>
+	    <% end %>	
+	    </td>
+    </tr>
+  </tbody>
+</table>
+
