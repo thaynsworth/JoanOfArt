@@ -15,7 +15,7 @@
 </div>
 
 
-<table class="container" id="projects">
+<table class="container" id="animals">
   <thead class="row">
     <tr>
       <th>Animals</th>
@@ -23,10 +23,10 @@
   </thead>
   <tbody class="row">
   	<% @animals.in_groups_of(3, false).each do |animals| %>
-			<tr class="offset-by-one eleven columns">	
+			<tr>	
 				<% animals.each do |animal| %>	
-			    <td>
-			    	<%=link_to image_tag(animal.avatar.url(:thumb)), projects_path(@project) %>	
+			    <td class="four columns">
+			    	<%=link_to image_tag(animal.avatar.url(:thumb)), project_path(:id => animal.id) %>	
 			    	<p><%= link_to animal.name, project_path(:id => animal.id) %><p>
 			    </td> 
 			  <% end %>   
@@ -34,4 +34,5 @@
 		<% end %>
   </tbody>
 </table>
+
 
