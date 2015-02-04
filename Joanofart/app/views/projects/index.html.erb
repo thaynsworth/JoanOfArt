@@ -26,8 +26,8 @@
 			<tr class="offset-by-one eleven columns">	
 				<% animals.each do |animal| %>	
 			    <td>
-			    	<%=link_to image_tag(animal.avatar.url(:thumb)), animal.avatar.url(:original), :popup=>['original_image', 'height=700,width=900'] %>	
-			    	<p><%= animal.name %><p>
+			    	<%=link_to image_tag(animal.avatar.url(:thumb)), projects_path(@project) %>	
+			    	<p><%= link_to animal.name, project_path(:id => animal.id) %><p>
 			    </td> 
 			  <% end %>   
 			</tr>

@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
 
+  get 'project' => 'projects#show'
+
   resources :projects
   resources :sessions
   resources :users
