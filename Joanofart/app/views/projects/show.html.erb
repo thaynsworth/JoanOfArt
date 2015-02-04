@@ -1,2 +1,7 @@
 
-<h1><% @project.name %></h1>
+
+<div class="container">
+	<h1><%= @project.name %></h1>
+	<%= image_tag @project.avatar.url(:large) %>
+</div>
+
