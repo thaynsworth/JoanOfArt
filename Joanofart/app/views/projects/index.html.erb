@@ -10,6 +10,10 @@
 	</div>
 </div>
 
+<div class="container" id="project-main">
+	
+</div>
+
 
 <table class="container" id="projects">
   <thead class="row">
@@ -18,13 +22,16 @@
     </tr>
   </thead>
   <tbody class="row">
-		<tr class="offset-by-one ten columns">
-	    <td>
-	    <% @animals.each do |animal| %>	
-	    	<%=link_to image_tag(animal.avatar.url(:thumb)), animal.avatar.url(:original), :popup=>['original_image', 'height=700,width=900'] %>
-			<% end %>	
-	    </td> 
-		</tr>
+  	<% @animals.in_groups_of(3, false).each do |animals| %>
+			<tr class="offset-by-one eleven columns">	
+				<% animals.each do |animal| %>	
+			    <td>
+			    	<%=link_to image_tag(animal.avatar.url(:thumb)), animal.avatar.url(:original), :popup=>['original_image', 'height=700,width=900'] %>	
+			    	<p><%= animal.name %><p>
+			    </td> 
+			  <% end %>   
+			</tr>
+		<% end %>
   </tbody>
 </table>
 
