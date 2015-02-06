@@ -3,5 +3,12 @@
 <div class="container">
 	<h1><%= @project.name %></h1>
 	<%= image_tag @project.avatar.url(:large) %>
+	<% if logged_in? %>
+    <%= button_to "Delete", {:controller => :projects,
+                                         :action => 'destroy',
+                                         :id => @project.id }, :method => :delete %>		
+	<% else %>
+		<% nil %>
+	<% end %>
 </div>
 
