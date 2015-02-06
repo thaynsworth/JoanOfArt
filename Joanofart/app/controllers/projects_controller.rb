@@ -25,10 +25,10 @@ class ProjectsController < ApplicationController
   def create
 
     @project = Project.new(project_params)
-
+    binding.pry
     respond_to do |format|
       if @project.save
-        format.html { redirect_to @project, notice: 'Project was successfully created.' }
+        format.html { redirect_to projects_path, notice: 'Project was successfully created.' }
         format.json { render :show, status: :created, location: @project }
       else
         format.html { render :new }
@@ -60,7 +60,7 @@ class ProjectsController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:name, :description, :price, :category, :user_id, :avatar)
+    params.require(:project).permit(:name, :description, :price, :category, :user_id, :avatar, :project_id)
   end
 
 end
