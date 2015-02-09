@@ -4,9 +4,10 @@
 	<h1><%= @project.name %></h1>
 	<%= image_tag @project.avatar.url(:large) %>
 	<% if logged_in? %>
+		<%= link_to "Edit", edit_project_path(:id => @project.id) %>
     <%= button_to "Delete", {:controller => :projects,
-                                         :action => 'destroy',
-                                         :id => @project.id }, :method => :delete %>		
+                                 :action => 'destroy',
+                                     :id => @project.id }, :method => :delete %>		
 	<% else %>
 		<% nil %>
 	<% end %>

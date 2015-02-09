@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
 
   get 'project' => 'projects#show'
+  post 'project' => 'projects#edit'
+  patch 'project' => 'projects#update'
 
   resources :projects
   resources :sessions

@@ -22,13 +22,14 @@
     </select>
   <div>
     <% if @project.avatar.exists? %>
-      <%= avatar_tag @project.avatar.url %>
+      <%= image_tag @project.avatar.url(:thumb) %>
     <% end %>
     <%= f.label :avatar, "Attach an Image of your Project" %><br>
     <%= f.file_field :avatar %>
   </div>
  
   <input type='hidden' name='project[user_id]' value='<%= current_user.id %>' />
+  <input type='hidden' name='project[id]' value='<%= @project.id %>' />
  
   <div>
     <%= f.submit %>
