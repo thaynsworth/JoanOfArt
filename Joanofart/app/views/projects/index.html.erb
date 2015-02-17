@@ -1,4 +1,5 @@
 <div class="container">	
+	
 	<div class="row">
 		<div class="offset-by-one column" id="project-nav">
 			<div class="two columns" id="flower-button">Flowers</div>
@@ -8,57 +9,63 @@
 			<div class="two columns">Children's Books</div>
 		</div>
 	</div>
-</div>
 
-<div class="container">
 
-	<div class="project-main">
-		<h1>This will be a photo slideshow</h1>
+	<div class="row">
+
+		<div class="project-main">
+			<h1>This will be a photo slideshow</h1>
+		</div>
+
 	</div>
 
-<table class="container animals">
-  <thead class="row">
-    <tr>
-      <th>Animals</th>
-    </tr>
-  </thead>
-  <tbody class="row">
-  	<% @animals.in_groups_of(3, false).each do |animals| %>
-			<tr>	
-				<% animals.each do |animal| %>	
-			    <td class="four columns">
-			    	<%=link_to image_tag(animal.avatar.url(:thumb)), project_path(:id => animal.id) %>	
-			    	<p><%= link_to animal.name, project_path(:id => animal.id) %><p>
-			    	<p><%= animal.description %></p>
-			    	<p><%= animal.price %></p>			
-			    </td> 
-			  <% end %>   
-			</tr>
-		<% end %>
-  </tbody>
-</table>
+	<div class="row animals">
+		<table>
+		  <thead>
+		    <tr>
+		      <th>Animals</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		  	<% @animals.in_groups_of(3, false).each do |animals| %>
+					<tr>	
+						<% animals.each do |animal| %>	
+					    <td class="four columns">
+					    	<%=link_to image_tag(animal.avatar.url(:thumb)), project_path(:id => animal.id) %>	
+					    	<p><%= link_to animal.name, project_path(:id => animal.id) %><p>
+					    	<p><%= animal.description %></p>
+					    	<p><%= animal.price %></p>			
+					    </td> 
+					  <% end %>   
+					</tr>
+				<% end %>
+		  </tbody>
+		</table>
+	</div>
 
-<table class="container flowers">
-  <thead class="row">
-    <tr>
-      <th>Flowers</th>
-    </tr>
-  </thead>
-  <tbody class="row">
-  	<% @flowers.in_groups_of(3, false).each do |flowers| %>
-			<tr>	
-				<% flowers.each do |flower| %>	
-			    <td class="four columns">
-			    	<%=link_to image_tag(flower.avatar.url(:thumb)), project_path(:id => flower.id) %>	
-			    	<p><%= link_to flower.name, project_path(:id => flower.id) %><p>
-			    	<p><%= flower.description %></p>
-			    	<p><%= flower.price %></p>			
-			    </td> 
-			  <% end %>   
-			</tr>
-		<% end %>
-  </tbody>
-</table>
+	<div class="row flowers">
+		<table>
+		  <thead>
+		    <tr>
+		      <th>Flowers</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		  	<% @flowers.in_groups_of(3, false).each do |flowers| %>
+					<tr>	
+						<% flowers.each do |flower| %>	
+					    <td class="four columns">
+					    	<%=link_to image_tag(flower.avatar.url(:thumb)), project_path(:id => flower.id) %>	
+					    	<p><%= link_to flower.name, project_path(:id => flower.id) %><p>
+					    	<p><%= flower.description %></p>
+					    	<p><%= flower.price %></p>			
+					    </td> 
+					  <% end %>   
+					</tr>
+				<% end %>
+		  </tbody>
+		</table>
+	</div>
 
 </div>
 

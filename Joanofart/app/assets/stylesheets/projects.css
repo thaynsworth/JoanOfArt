@@ -3,6 +3,10 @@
 
 }
 
+.project-main {
+	background-color: purple;
+}
+
 .flowers {
 	display: none;
 	background-color: lightgreen;	
@@ -10,13 +14,14 @@
 
 .animals {
 	display: none;
-
+	background-color: lightyellow;
 
 }
 
-.animals-display {
-	background-color: darkgrey;
+table {
+	margin-left: 70px;
 }
+
 
 
 

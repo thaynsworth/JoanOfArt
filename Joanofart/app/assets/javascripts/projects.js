@@ -1,12 +1,12 @@
 function emptyProjects(){
 	console.log('Hide all projects')
 	$("div.project-main").hide();
-	$("table.animals").hide();
-	$("table.flowers").hide();
+	$("div.animals").hide();
+	$("div.flowers").hide();
 }
 
 function animalProjects(){
-	$('table.animals').show();
+	$('.animals').show();
 	console.log('showing animals');
 }
 
