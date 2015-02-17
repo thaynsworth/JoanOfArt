@@ -3,12 +3,19 @@
 
 }
 
-#animals {
-background-color: darkgrey;
+.flowers {
+	display: none;
+	background-color: lightgreen;	
 }
 
-#animals {
-	padding-left: 50px;
+.animals {
+	display: none;
+
+
+}
+
+.animals-display {
+	background-color: darkgrey;
 }
 
 

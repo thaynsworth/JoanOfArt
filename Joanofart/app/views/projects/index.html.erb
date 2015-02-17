@@ -1,7 +1,7 @@
 <div class="container">	
 	<div class="row">
 		<div class="offset-by-one column" id="project-nav">
-			<div class="two columns">Flowers</div>
+			<div class="two columns" id="flower-button">Flowers</div>
 			<div class="two columns" id="animal-button">Animals</div>
 			<div class="two columns">Landscapes</div>
 			<div class="two columns">Greeting Cards</div>
@@ -10,12 +10,13 @@
 	</div>
 </div>
 
-<div class="container" id="project-main">
-	
-</div>
+<div class="container">
 
+	<div class="project-main">
+		<h1>This will be a photo slideshow</h1>
+	</div>
 
-<table class="container" id="animals">
+<table class="container animals">
   <thead class="row">
     <tr>
       <th>Animals</th>
@@ -37,4 +38,45 @@
   </tbody>
 </table>
 
+<table class="container flowers">
+  <thead class="row">
+    <tr>
+      <th>Flowers</th>
+    </tr>
+  </thead>
+  <tbody class="row">
+  	<% @flowers.in_groups_of(3, false).each do |flowers| %>
+			<tr>	
+				<% flowers.each do |flower| %>	
+			    <td class="four columns">
+			    	<%=link_to image_tag(flower.avatar.url(:thumb)), project_path(:id => flower.id) %>	
+			    	<p><%= link_to flower.name, project_path(:id => flower.id) %><p>
+			    	<p><%= flower.description %></p>
+			    	<p><%= flower.price %></p>			
+			    </td> 
+			  <% end %>   
+			</tr>
+		<% end %>
+  </tbody>
+</table>
+
+</div>
+
+<script>
+	
+$(function(){
+
+	$("#animal-button").click(function(){
+		emptyProjects();
+		animalProjects();
+	});
+
+	$("#flower-button").click(function(){
+		emptyProjects();
+		flowerProjects();
+	});
+
+})
+
+</script>
 

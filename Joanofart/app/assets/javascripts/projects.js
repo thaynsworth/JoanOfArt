@@ -1,17 +1,16 @@
 function emptyProjects(){
-	$("#projects").empty();
+	console.log('Hide all projects')
+	$("div.project-main").hide();
+	$("table.animals").hide();
+	$("table.flowers").hide();
 }
 
 function animalProjects(){
-	$("#animals").slideToggle();
+	$('table.animals').show();
+	console.log('showing animals');
 }
 
-$(function(){
+function flowerProjects(){
+	$('.flowers').show();
+}
 
-	$("#animal-button").click(function(){
-		emptyProjects();
-		animalProjects();
-
-	})
-
-})
