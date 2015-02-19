@@ -7,6 +7,8 @@ class ProjectsController < ApplicationController
     @landscapes = Project.where(category: "landscapes")
     @greeting = Project.where(category: "greeting cards")
     @books = Project.where(category: "childrens books")
+    projects = Project.all
+    @projects = projects.sample
   end
 
   def show

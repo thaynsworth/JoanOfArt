@@ -1,10 +1,44 @@
 
 <div class="container">
-	<h1>Welcome to Joan of Art!</h1>
+	<div class="row">
 
-	<div>
-		<h2>About the Artist</h2>
-		<p>I started painting as a hobby over 30 years ago and have enjoyed the process through the years. My love of gardening and photography seems to have worked well in conjunction with my enjoyment of painting flowers.</p>
-		<p>My children's book was a fun way to share my animal paintings. I starting "painting" on the iPad and then I would paint the same using oil next time I was in my studio. You'll see examples of this in the animal section.</p>
+		<div class="eight columns" id="slideshow">
+			<div>
+				<img src="/assets/ducks.jpg">
+			</div>
+					<div>
+				<img src="/assets/eagles2.jpg">
+			</div>
+					<div>
+				<img src="/assets/elephant.jpg">
+			</div>
+		</div>
+
+
+		<div class="four columns">
+			<h4>Joan E. Haynsworth</h4>
+			<p>I started painting as a hobby over 30 years ago and have enjoyed the process through the years. My love of gardening and photography seems to have worked well in conjunction with my enjoyment of painting flowers.</p>
+			<p>My children's book was a fun way to share my animal paintings. I starting "painting" on the iPad and then I would paint the same using oil next time I was in my studio. You'll see examples of this in the animal section.</p>
+		</div>
+
 	</div>
 </div>
+
+<script>
+	
+$(function(){	
+
+	$("#slideshow > div:gt(0)").hide();
+
+	setInterval(function() { 
+	  $('#slideshow > div:first')
+	    .fadeOut(1000)
+	    .next()
+	    .fadeIn(1000)
+	    .end()
+	    .appendTo('#slideshow');
+	},  3000);
+
+});
+
+</script>
