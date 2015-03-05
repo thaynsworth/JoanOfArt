@@ -1,6 +1,8 @@
 
 #project-nav {
 	padding-left: 2em;
+	padding-top: 2em;
+	padding-bottom: 5em;
 }
 
 #project-nav button {
@@ -18,13 +20,20 @@
 
 .flowers {
 	display: none;
-	background-color: lightgreen;	
+	/*background-color: lightgreen;	*/
+}
+
+.flowers p {
+	margin: 0;
 }
 
 .animals {
 	display: none;
-	background-color: lightyellow;
+	/*background-color: lightyellow;*/
+}
 
+.animals p {
+	margin: 0;
 }
 
 table {
@@ -40,11 +49,12 @@ table {
 }
 
 #show-photo img {
-	box-shadow: 10px 10px 5px black;
+	box-shadow: 5px 5px 5px black;
 }
 
 #show-description {
 	border: 1px solid black;
+	border-radius: 10px;
 	text-align: center;
 	margin-top: 3em;
 	margin-left:10em;
