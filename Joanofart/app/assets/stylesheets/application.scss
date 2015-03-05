@@ -16,15 +16,21 @@
 
 
 header {
-	background-color: darkgrey;
+	background-image: url('color_water.jpg');
+	height: 7em;
+	width: 100%;
 }
 
 header a {
 	text-decoration: none;
 }
 
+a {
+	color: white;
+}
+
 a:visited {
-	color: black;
+	color: white;
 }
 
 a:hover {
