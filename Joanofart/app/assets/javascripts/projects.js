@@ -1,16 +1,24 @@
 function emptyProjects(){
 	console.log('Hide all projects')
+
 	$("div.project-main").hide();
 	$("div.animals").hide();
 	$("div.flowers").hide();
 }
 
 function animalProjects(){
-	$('.animals').show();
+	var animals = $('.animals');
+	animals.fadeIn(1000, function(){
+		animals.show();
+	});
 	console.log('showing animals');
 }
 
 function flowerProjects(){
-	$('.flowers').show();
+	var flowers = $('.flowers');
+	flowers.fadeIn(1000, function(){
+		flowers.show();
+	});
+	console.log('showing flowers');
 }
 
