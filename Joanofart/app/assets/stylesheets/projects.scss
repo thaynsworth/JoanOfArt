@@ -1,6 +1,15 @@
 
 #project-nav {
+	padding-left: 2em;
+}
 
+#project-nav button {
+	border: 1px solid black;
+	width: auto;
+}
+
+#project-nav button:hover {
+	background-color: lightgrey;
 }
 
 .project-main {

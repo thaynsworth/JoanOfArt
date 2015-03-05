@@ -16,7 +16,6 @@
 
 
 		<div class="four columns">
-			<h4>Joan E. Haynsworth</h4>
 			<p>I started painting as a hobby over 30 years ago and have enjoyed the process through the years. My love of gardening and photography seems to have worked well in conjunction with my enjoyment of painting flowers.</p>
 			<p>My children's book was a fun way to share my animal paintings. I starting "painting" on the iPad and then I would paint the same using oil next time I was in my studio. You'll see examples of this in the animal section.</p>
 		</div>
@@ -32,12 +31,12 @@ $(function(){
 
 	setInterval(function() { 
 	  $('#slideshow > div:first')
-	    .fadeOut(1000)
+	    .fadeOut(3000)
 	    .next()
-	    .fadeIn(1000)
+	    .fadeIn(3000)
 	    .end()
 	    .appendTo('#slideshow');
-	},  3000);
+	},  5000);
 
 });
 
