@@ -33,10 +33,23 @@ table {
 
 /*Show Page*/
 
+#show-photo {
+	margin-top: 3em;
+	margin-bottom: 3em;
+	
+}
+
+#show-photo img {
+	box-shadow: 10px 10px 5px black;
+}
+
 #show-description {
 	border: 1px solid black;
 	text-align: center;
 	margin-top: 3em;
+	margin-left:10em;
+	width: 20em;
+	height: auto;
 }
 
 
