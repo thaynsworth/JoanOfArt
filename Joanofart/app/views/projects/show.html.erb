@@ -1,15 +1,24 @@
 
 
 <div class="container">
-	<h1><%= @project.name %></h1>
-	<%= image_tag @project.avatar.url(:large) %>
-	<% if logged_in? %>
-		<%= link_to "Edit", edit_project_path(:id => @project.id) %>
-    <%= button_to "Delete", {:controller => :projects,
-                                 :action => 'destroy',
-                                     :id => @project.id }, :method => :delete %>		
-	<% else %>
-		<% nil %>
-	<% end %>
+	<div class="row">
+		<div class="six columns" id="show-photo">
+			<%= image_tag @project.avatar.url(:large) %>
+		</div>
+		<div class="six columns" id="show-description">
+			<h2><%= @project.name %></h2>
+			<p><%= @project.description %></p>
+			<p><%= @project.price %></p>
+		<% if logged_in? %>
+			<%= link_to "Edit", edit_project_path(:id => @project.id) %>
+	    <%= button_to "Delete", {:controller => :projects,
+	                                 :action => 'destroy',
+	                                     :id => @project.id }, :method => :delete %>		
+		<% else %>
+			<% nil %>
+		<% end %>
+		</div>
+		</div>
+	</div>	
 </div>
 
