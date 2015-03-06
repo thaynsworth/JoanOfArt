@@ -16,10 +16,10 @@
 }
 
 #project-nav li:hover {
-	border-bottom: 3px solid orange;
+	border-bottom: 3px solid grey;
 	cursor: pointer;
 	/*font-weight: 900;*/
-	color: orange;
+	color: grey;
 }
 
 #project-main {
@@ -30,8 +30,12 @@
 	margin: 0;
 }
 
-.project-load img{
+#project-main img {
 	box-shadow: 3px 3px 3px grey;
+}
+
+#project-main img:hover {
+	opacity: .8;
 }
 
 th {
@@ -41,20 +45,10 @@ th {
 
 .flowers {
 	display: none;
-	/*background-color: lightgreen;	*/
-}
-
-.flowers img {
-	box-shadow: 3px 3px 3px grey;
 }
 
 .animals {
 	display: none;
-	/*background-color: lightyellow;*/
-}
-
-.animals img {
-	box-shadow: 3px 3px 3px grey;
 }
 
 table {
