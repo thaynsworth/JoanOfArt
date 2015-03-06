@@ -1,18 +1,23 @@
-<h1>Log in</h1>
 
-<div>
-  <div>
-    <%= form_for(:session, url: login_path) do |f| %>
 
-      <%= f.label :email %>
-      <%= f.text_field :email %>
+<div class="container">
+  <div class="row">
+    <div id="login" class="offset-by-four columns six columns">
+      <h1>Log in</h1>
+      <div>
+        <%= form_for(:session, url: login_path) do |f| %>
 
-      <%= f.label :password %>
-      <%= f.password_field :password %>
+          <%= f.label :email %>
+          <%= f.text_field :email %>
 
-      <%= f.submit "Log in" %>
-    <% end %>
+          <%= f.label :password %>
+          <%= f.password_field :password %>
 
-    <p>Not Joan? <%= link_to "Home", root_path %></p>
+          <%= f.submit "Log in" %>
+        <% end %>
+
+        <p>Not Joan? <%= link_to "Home", root_path %></p>
+      </div>
+    </div>  
   </div>
 </div>

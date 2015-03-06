@@ -18,15 +18,15 @@
         <nav class="four columns" id="main-nav">
         	<% if logged_in? %>
           <ul>
-            <li><%= link_to "home", root_path %></li>
-          	<li><%= link_to "artwork", projects_path %></li>
-        		<li><%= link_to "log out", logout_path, method: :delete %></li>
+            <li><%= link_to "HOME", root_path %></li>
+          	<li><%= link_to "ARTWORK", projects_path %></li>
+        		<li><%= link_to "LOG OUT", logout_path, method: :delete %></li>
           </ul>  
           <% else %>
           <ul>
-            <li><%= link_to "home", root_path %></li>
-            <li><%= link_to "artwork", projects_path %></li>
-          	<li><%= link_to "log in", login_path %></li>
+            <li><%= link_to "HOME", root_path %></li>
+            <li><%= link_to "ARTWORK", projects_path %></li>
+          	<li><%= link_to "LOG IN", login_path %></li>
           </ul>	
         	<% end %>
         </nav>  
