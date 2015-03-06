@@ -1,7 +1,7 @@
 function emptyProjects(){
 	console.log('Hide all projects')
 
-	$("div.project-main").hide();
+	$("div.project-load").hide();
 	$("div.animals").hide();
 	$("div.flowers").hide();
 }

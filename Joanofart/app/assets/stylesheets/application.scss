@@ -19,9 +19,11 @@ header {
 	background-image: url('dark_water2.jpg');
 	height: 7em;
 	width: 100%;
+	opacity: .7;
 }
 
 header a {
+	padding-top: 20px;
 	text-decoration: none;
 }
 
@@ -39,6 +41,10 @@ a:hover {
 
 #main-nav {
 	font-size: 20px;
+}
+
+#main-nav li {
+	display: inline-block;
 }
 
 footer {
