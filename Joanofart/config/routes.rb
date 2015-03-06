@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root 'static_pages#home'
 
-  get 'static_pages' => 'static_pages#about'
+  get 'about' => 'static_pages#about'
 
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'
@@ -15,5 +15,6 @@ Rails.application.routes.draw do
   resources :projects
   resources :sessions
   resources :users
+  resources :static_pages
 
 end

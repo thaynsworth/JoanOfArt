@@ -12,19 +12,19 @@
   <header>
     <div class="container">
       <div class="row">
-        <div class="eight columns">
+        <div class="four columns">
           <h4><%= link_to "Joan E Haynsworth", root_path%></h4>
         </div>
-        <nav class="four columns" id="main-nav">
+        <nav class="offset-by-three columns four columns" id="main-nav">
         	<% if logged_in? %>
           <ul>
-            <li><%= link_to "HOME", root_path %></li>
+            <li><%= link_to "ABOUT", about_path %></li>
           	<li><%= link_to "ARTWORK", projects_path %></li>
         		<li><%= link_to "LOG OUT", logout_path, method: :delete %></li>
           </ul>  
           <% else %>
           <ul>
-            <li><%= link_to "HOME", root_path %></li>
+            <li><%= link_to "ABOUT", root_path %></li>
             <li><%= link_to "ARTWORK", projects_path %></li>
           	<li><%= link_to "LOG IN", login_path %></li>
           </ul>	
