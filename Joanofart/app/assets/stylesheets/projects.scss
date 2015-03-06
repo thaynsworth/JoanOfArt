@@ -1,17 +1,23 @@
 
 #project-nav {
-	padding-left: 2em;
-	padding-top: 2em;
-	padding-bottom: 2em;
-}
-
-#project-nav button {
-	border: 1px solid black;
-	width: auto;
-}
-
-#project-nav button:hover {
+	/*padding-left:;*/
+	padding-top: 1em;
+	/*padding-bottom: 1em;*/
 	background-color: lightgrey;
+	height: 3em;
+}
+
+#project-nav li {
+	list-style-type: none;
+	font-size: 1em;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+
+#project-nav li:hover {
+	border-bottom: 3px solid black;
+	cursor: pointer;
+	font-weight: 900;
 }
 
 .project-main {
