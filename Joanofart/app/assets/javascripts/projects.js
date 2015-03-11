@@ -5,20 +5,14 @@ function emptyProjects(){
 	$("div.animals").hide();
 	$("div.flowers").hide();
 
-	$('#project-nav li').css({
-		'border-bottom': 'none',
-		'color': 'black'
-	})
+	$('#project-nav li').removeClass('project-nav-hover');
 
 }
 
 function animalProjects(){
 	var animals = $('.animals');
 	var animalButton = $('#animal-button');
-	animalButton.css({
-		'border-bottom': '3px solid grey',
-		'color': 'grey'
-	});
+	animalButton.addClass('project-nav-hover');
 	animals.fadeIn(1000, function(){
 		animals.show();
 	});
@@ -28,10 +22,7 @@ function animalProjects(){
 function flowerProjects(){
 	var flowers = $('.flowers');
 	var flowerButton = $('#flower-button');
-	flowerButton.css({
-		'border-bottom': '3px solid grey',
-		'color': 'grey'		
-	})
+	flowerButton.addClass('project-nav-hover');
 	flowers.fadeIn(1000, function(){
 		flowers.show();
 	});

@@ -1,4 +1,8 @@
 
+#project-form {
+	padding: 0;
+}
+
 #project-nav {
 	/*padding-left:;*/
 	padding-top: 1em;
@@ -21,6 +25,11 @@
 	border-bottom: 3px solid grey;
 	cursor: pointer;
 	/*font-weight: 900;*/
+	color: grey;
+}
+
+.project-nav-hover {
+	border-bottom: 3px solid grey;
 	color: grey;
 }
 

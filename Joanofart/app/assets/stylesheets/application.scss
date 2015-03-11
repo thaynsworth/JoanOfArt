@@ -19,47 +19,57 @@ header {
 	background-image: url('gate.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 10em;
+	height: 9em;
 	padding-top: 40px;
 	padding-bottom: 0px;
 }
 
 header a {
-	text-decoration: none;
 	padding: 7px;
-	padding-top: 20px;
+	/*padding-top: 20px;*/
 }
 
 header h4 {
-	font-family: 'Tangerine', cursive;
-	font-size: 50px;
+	/*font-family: 'Tangerine', cursive;*/
+	font-family: 'Josefin Sans', sans-serif;
+	/*font-family: 'Julius Sans One', sans-serif;*/
+	/*font-family: 'Belleza', sans-serif;*/
+	font-size: 40px;
 	text-align: center;
+}
+
+header a h4:visited {
+	color: darkgrey;
+}
+
+header a h4:hover {
+	color: black;
 }
 
 a {
 	color: darkgrey;
+	text-decoration: none;
 }
 
 a:visited {
-	color: darkgrey;
-}
-
-a:hover {
-	color: white;
+	color: none;
 }
 
 #main-nav {
-	font-size: 20px;
+	font-size: 24px;
 	border: 1px solid white;
 	border-radius: 5px;
 	background-color: white;
-	opacity: .7;
+	opacity: .8;
 	text-align: center;
+	height: auto;
 }
 
 #main-nav li {
 	display: inline-block;
-	color: white
+	font-weight: bold;
+	padding-top: 30px;
+	/*color: white*/
 }
 
 footer {
