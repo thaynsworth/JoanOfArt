@@ -96,16 +96,28 @@
 	
 $(function(){
 
-
-	$("#flower-button").click(function(){
+	$('#project-nav li').click(function(){
 		emptyProjects();
-		flowerProjects();
+		var button = $(this).attr('id');
+		
+		if (button === 'flower-button'){
+			flowerProjects()
+		} else if (button === 'animal-button'){
+			animalProjects()
+		}
+
 	});
 
-	$("#animal-button").click(function(){
-		emptyProjects();
-		animalProjects();
-	});
+
+	// $("#flower-button").click(function(){
+	// 	emptyProjects();
+	// 	flowerProjects();
+	// });
+
+	// $("#animal-button").click(function(){
+	// 	emptyProjects();
+	// 	animalProjects();
+	// });
 
 })
 
