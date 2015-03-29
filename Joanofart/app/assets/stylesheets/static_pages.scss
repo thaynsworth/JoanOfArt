@@ -43,6 +43,12 @@
     border: 1px solid white;
     margin: 10px;
     width: 150px;
+    opacity: .7;
+}
+
+.home-main li:hover {
+    font-weight: 900;
+    opacity: .9;
 }
 
 #slideshow { 
