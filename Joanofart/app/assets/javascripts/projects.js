@@ -1,3 +1,4 @@
+
 function emptyProjects(){
 	console.log('Hide all projects');
 

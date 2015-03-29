@@ -1,24 +1,40 @@
 
-<div id="home">
-	<div class="center container home-main">
-		<div class="row">
-			<div class="twelve columns">
-		
-			<h1>Joan Haynsworth</h1>
-			<h3>All Things Art!</h3>
-			<ul>
-	      <li><%= link_to "ARTWORK", projects_path %></li>
-        <li><%= link_to "ABOUT", about_path %></li>
-        <li><%= link_to "CONTACT", contact_path %></li>
-			</ul>
-			</div>
 
+
+<div id="home">
+	
+	<div class="container">
+		<div class="row">
+			<div class="offset-by-one column sixteen columns home-main">
+				<h1>Joan Haynsworth Art</h1>
+				<ul>
+					<li><%= link_to "ARTWORK", projects_path %></li>
+          <li><%= link_to "ABOUT", about_path %></li>
+          <li><%= link_to "CONTACT", contact_path %></li>
+				</ul>
+			</div>
 		</div>
 	</div>
-	
+
 </div>
 
+<script>
 
+  $(function(){
+
+    $('.home-main li').mouseenter(function(){
+      $(this).animate({
+        'border': '3px solid white'});
+    });
+
+    $('.home-main li').mouseleave(function(){
+      $(this).animate({
+        'border': '2px solid white'});
+    });
+
+  })
+
+</script>
 
 <!-- <div class="container">
 	<div class="row">
