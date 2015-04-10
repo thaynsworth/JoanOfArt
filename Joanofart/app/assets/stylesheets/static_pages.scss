@@ -22,6 +22,7 @@
     margin-top: 100px;
     text-align: center;
     padding-top: 40px;
+    border-radius: 7px;
     // background-color: white;
 }
 
@@ -29,7 +30,12 @@
     color: white;
     font-size: 80px;
     margin-bottom: 50px;
-    font-family: 'Tangerine', cursive;
+    // font-family: 'Tangerine', cursive;
+}
+
+.home-main h1 span {
+    font-size: 100px;
+    font-weight: bold;
 }
 
 .home-main h3 {
@@ -43,12 +49,14 @@
     border: 1px solid white;
     margin: 10px;
     width: 150px;
-    opacity: .7;
+    opacity: .8;
+    box-shadow: 3px 3px 3px darkgrey;
 }
 
 .home-main li:hover {
     font-weight: 900;
-    opacity: .9;
+    opacity: .8;
+    box-shadow: 3px 3px 3px white;
 }
 
 #slideshow { 
