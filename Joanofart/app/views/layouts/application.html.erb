@@ -18,19 +18,11 @@
           <h4><%= link_to "Joan E Haynsworth", root_path%></h4>
         </div>
         <nav class="offset-by-three columns four columns" id="main-nav">
-        	<% if logged_in? %>
           <ul>
           	<li><%= link_to "ARTWORK", projects_path %></li>
             <li><%= link_to "ABOUT", about_path %></li>
             <li><%= link_to "CONTACT", contact_path %></li>
           </ul>  
-          <% else %>
-          <ul>
-            <li><%= link_to "ARTWORK", projects_path %></li>
-            <li><%= link_to "ABOUT", about_path %></li>
-            <li><%= link_to "CONTACT", contact_path %></li>
-          </ul>	
-        	<% end %>
         </nav>  
       </div>  
     </div>
