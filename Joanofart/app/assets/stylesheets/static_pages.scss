@@ -16,14 +16,24 @@
 }
 
 .home-main {
-    border: 6px solid white;
     height: 300px;
     width: 800px;
     margin-top: 100px;
     text-align: center;
     padding-top: 40px;
     border-radius: 7px;
+    position: relative;
     // background-color: white;
+}
+
+
+#border-bottom {
+  border-bottom: 2px solid white;
+  position: absolute;
+  width: 0px;
+  left: 50%;
+  top: 50%;
+   
 }
 
 .home-main h1 {

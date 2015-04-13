@@ -7,8 +7,10 @@
 		<div class="row">
 			<div class="offset-by-one column sixteen columns home-main">
 				<h1>Joan Haynsworth Art</h1>
+				<div id="border-bottom"></div>
 				<ul>
 					<li><%= link_to "ARTWORK", projects_path %></li>
+
           <li><%= link_to "ABOUT", about_path %></li>
           <li><%= link_to "CONTACT", contact_path %></li>
 				</ul>
@@ -22,17 +24,14 @@
 
   $(function(){
 
-    $('.home-main li').mouseenter(function(){
-      $(this).animate({
-        'margin-top': '100px'});
-    }, 1000);
+  	$(window).load(function(){
+	    $('#border-bottom').animate({
+	    	'width':'100%',
+	    	'left': 0
+	    	}, 1500);
 
-    $('.home-main li').mouseleave(function(){
-      $(this).animate({
-        'height': '20px'});
-    }, 1000);
-
-  })
+	   });
+  });
 
 </script>
 

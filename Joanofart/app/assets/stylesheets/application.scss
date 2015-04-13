@@ -38,12 +38,12 @@ header h4 {
 	text-align: center;
 }
 
-header a h4:visited {
-	color: darkgrey;
+header h4 a:visited {
+	color: white;
 }
 
-header a h4:hover {
-	color: black;
+header h4 a:hover {
+	color: darkgrey;
 }
 
 .home-screen {
@@ -59,13 +59,9 @@ header a h4:hover {
 }
 
 a {
-	color: darkgrey;
 	text-decoration: none;
 }
 
-a:visited {
-	color: darkgrey;
-}
 
 #main-nav {
 	font-size: 24px;
@@ -81,8 +77,11 @@ a:visited {
 	display: inline-block;
 	font-weight: bold;
 	padding-top: 30px;
-	font-color: darkgrey;
 	/*color: white*/
+}
+
+#main-nav a:visited {
+	color: darkgrey;
 }
 
 
