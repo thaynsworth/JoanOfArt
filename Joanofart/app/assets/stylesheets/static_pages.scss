@@ -36,12 +36,25 @@
    
 }
 
+
+
 .home-main h1 {
     color: white;
     font-size: 80px;
     margin-bottom: 50px;
     // font-family: 'Tangerine', cursive;
 }
+
+// .home-main li {
+//     display: inline-block;
+//     text-decoration: none;
+//     padding: 5px;
+// }
+
+// .home-main li a {
+//     font-size: 50px;
+//     color: white;
+// }
 
 .home-main li {
     display: inline-block;
@@ -51,14 +64,20 @@
     margin: 10px;
     width: 150px;
     opacity: .8;
-    box-shadow: 3px 3px 3px darkgrey;
+    // box-shadow: 3px 3px 3px white;
+    background-color: white;
+    border-radius: 5px;
 }
 
-.home-main li:hover {
-    font-weight: 900;
-    opacity: .8;
-    box-shadow: 3px 3px 3px white;
+.home-main li a:visited {
+    color: black;
 }
+
+// .home-main li:hover {
+//     font-weight: 900;
+//     opacity: .8;
+//     box-shadow: 3px 3px 3px white;
+// }
 
 #slideshow { 
     margin: 50px auto; 
