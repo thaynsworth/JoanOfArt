@@ -23,14 +23,12 @@
           	<li><%= link_to "ARTWORK", projects_path %></li>
             <li><%= link_to "ABOUT", about_path %></li>
             <li><%= link_to "CONTACT", contact_path %></li>
-        		<li><%= link_to "LOG OUT", logout_path, method: :delete %></li>
           </ul>  
           <% else %>
           <ul>
             <li><%= link_to "ARTWORK", projects_path %></li>
             <li><%= link_to "ABOUT", about_path %></li>
             <li><%= link_to "CONTACT", contact_path %></li>
-          	<li><%= link_to "LOG IN", login_path %></li>
           </ul>	
         	<% end %>
         </nav>  
@@ -39,6 +37,22 @@
   </header>
 
   <%= yield %>
+
+  <footer>
+    <div class="row">
+      <div class="three columns">
+        <% if logged_in? %>
+        <ul>
+          <li><%= link_to "LOG OUT", logout_path, method: :delete %></li>
+        </ul>
+        <% else %>
+        <ul>
+          <li><%= link_to "LOG IN", login_path %></li>
+        </ul>
+        <% end %> 
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
