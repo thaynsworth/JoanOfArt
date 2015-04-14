@@ -47,7 +47,7 @@ header h4 a:visited {
 }
 
 header h4 a:hover {
-	color: darkgrey;
+	color: white;
 }
 
 .home-screen {
@@ -77,6 +77,10 @@ a {
 	height: auto;
 }
 
+#main-nav a {
+	color: black;
+}
+
 #main-nav li {
 	display: inline-block;
 	font-weight: bold;
@@ -85,7 +89,7 @@ a {
 }
 
 #main-nav a:visited {
-	color: darkgrey;
+	color: black;
 }
 
 

@@ -1,22 +1,33 @@
   	
-  $(function(){
+function mainUnderline() {
+  $('#border-bottom').animate({
+    'width':'100%',
+    'left': 0
+    }, 1500);
+}
 
-    $(window).load(function(){
-	    $('#border-bottom').animate({
-	    	'width':'100%',
-	    	'left': 0
-	    	}, 1500);
-	   });
+function homeButtonAnimate() {
+    $('.home-main li').mouseenter(function(){
+      $(this).animate({
+        'opacity': '1'
+      }, 100);
+    })
+    $('.home-main li').mouseleave(function(){
+      $(this).animate({
+        'opacity': '.8',
+      }, 100);
+    })
+}
 
-  	$('.home-main li').mouseenter(function(){
-  		$(this).animate({
-  			'opacity': '1'
-  		}, 100);
-  	})
-  	$('.home-main li').mouseleave(function(){
-  		$(this).animate({
-  			'opacity': '.8',
+$(function(){
 
-  		}, 100);
-  	})
+  mainUnderline();
+  homeButtonAnimate();
+  $('#home-button').on('click', function() {
+    mainUnderline();
   });
+
+});
+
+
+ 
