@@ -16,12 +16,16 @@
 
 
 header {
-	background-image: url('purple_flower.jpg');
+	background-image: url('purple_flower_header.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 9em;
 	padding-top: 40px;
 	padding-bottom: 0px;
+}
+
+header img {
+	top: -100px;
 }
 
 header a {
