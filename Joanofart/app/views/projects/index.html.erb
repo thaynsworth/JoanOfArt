@@ -11,14 +11,15 @@
 		</nav>
 	</div>	
 </div>	 -->
-<div id='cssmenu'>
+<div id='cssmenu' class="align-center">
 	<div class="container">
 		<div class="row">	
 			<ul class="offset-by-one column">
-			   <li id="flower-button" class='active two columns'><a href='#flowers'><span>Flowers</span></a></li>
-			   <li class='two columns'><a href='#'><span>Products</span></a></li>
-			   <li class='two columns'><a href='#'><span>Company</span></a></li>
-			   <li class='last two columns'><a href='#'><span>Contact</span></a></li>
+			   <li id="flower-button" class='active '><a href='#flowers'><span>Flowers</span></a></li>
+			   <li id="animal-button"><a href='#animals'><span>Animals</span></a></li>
+			   <li><a href='#'><span>Landscapes</span></a></li>
+			   <li><a href='#'><span>Greeting Cards</span></a></li>
+			   <li class='last'><a href='#'><span>Children's Books</span></a></li>
 			</ul>
 		</div>
 	</div>
@@ -110,12 +111,16 @@ $(function(){
 
 	$('#cssmenu li').click(function(){
 		emptyProjects();
-		var button = $(this).attr('id');
+		var button = $(this).attr('id'),
+				el = $(this);
+
 		
 		if (button === 'flower-button'){
-			flowerProjects()
+			flowerProjects();
+			adjustActiveTab(el);
 		} else if (button === 'animal-button'){
-			animalProjects()
+			animalProjects();
+			adjustActiveTab(el);
 		}
 
 	});
