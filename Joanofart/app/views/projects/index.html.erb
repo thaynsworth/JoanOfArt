@@ -1,4 +1,4 @@
-<div id="project-nav" >
+<!-- <div id="project-nav" >
 	<div class="container">
 		<nav class="row">
 			<ul class="offset-by-one column">
@@ -10,7 +10,19 @@
 			</ul>
 		</nav>
 	</div>	
-</div>	
+</div>	 -->
+<div id='cssmenu'>
+	<div class="container">
+		<div class="row">	
+			<ul class="offset-by-one column">
+			   <li id="flower-button" class='active two columns'><a href='#flowers'><span>Flowers</span></a></li>
+			   <li class='two columns'><a href='#'><span>Products</span></a></li>
+			   <li class='two columns'><a href='#'><span>Company</span></a></li>
+			   <li class='last two columns'><a href='#'><span>Contact</span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
 
 <div id="project-main" class="container">	
 
@@ -96,7 +108,7 @@
 	
 $(function(){
 
-	$('#project-nav li').click(function(){
+	$('#cssmenu li').click(function(){
 		emptyProjects();
 		var button = $(this).attr('id');
 		
