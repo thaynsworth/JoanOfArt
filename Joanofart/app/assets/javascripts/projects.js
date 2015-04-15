@@ -11,8 +11,12 @@ function emptyProjects(){
 function updateProjects(obj) {
 	emptyProjects();
 	var topic = obj.attr('id');
-	
-	if (topic === 'flower-button') {
+	if (topic === 'project-main-button') {
+		var main = $('.project-load');
+		main.fadeIn(1000, function(){
+			main.show();
+		})
+	} else if (topic === 'flower-button') {
 		var flowers = $('.flowers');
 		flowers.fadeIn(1000, function(){
 			flowers.show();
@@ -25,22 +29,6 @@ function updateProjects(obj) {
 		});
 		console.log('showing animals');
 	}
-}
-
-function animalProjects(){
-	var animals = $('.animals');
-	animals.fadeIn(1000, function(){
-		animals.show();
-	});
-	console.log('showing animals');
-}
-
-function flowerProjects(){
-	var flowers = $('.flowers');
-	flowers.fadeIn(1000, function(){
-		flowers.show();
-	});
-	console.log('showing flowers');
 }
 
 function adjustActiveTab(el) {
