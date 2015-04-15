@@ -110,31 +110,13 @@
 $(function(){
 
 	$('#cssmenu li').click(function(){
-		emptyProjects();
+		
 		var button = $(this).attr('id'),
 				el = $(this);
-
-		
-		if (button === 'flower-button'){
-			flowerProjects();
-			adjustActiveTab(el);
-		} else if (button === 'animal-button'){
-			animalProjects();
-			adjustActiveTab(el);
-		}
+		updateProjects(el);	
+		adjustActiveTab(el);	
 
 	});
-
-
-	// $("#flower-button").click(function(){
-	// 	emptyProjects();
-	// 	flowerProjects();
-	// });
-
-	// $("#animal-button").click(function(){
-	// 	emptyProjects();
-	// 	animalProjects();
-	// });
 
 })
 

@@ -8,6 +8,25 @@ function emptyProjects(){
 
 }
 
+function updateProjects(obj) {
+	emptyProjects();
+	var topic = obj.attr('id');
+	
+	if (topic === 'flower-button') {
+		var flowers = $('.flowers');
+		flowers.fadeIn(1000, function(){
+			flowers.show();
+		});
+		console.log('showing flowers');		
+	} else if (topic === 'animal-button') {
+		var animals = $('.animals');
+		animals.fadeIn(1000, function(){
+			animals.show();
+		});
+		console.log('showing animals');
+	}
+}
+
 function animalProjects(){
 	var animals = $('.animals');
 	animals.fadeIn(1000, function(){
