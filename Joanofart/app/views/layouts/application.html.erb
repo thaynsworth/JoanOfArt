@@ -4,6 +4,7 @@
 
 <head>
   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans|Tangerine|Julius+Sans+One|Belleza|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <title>Joan E Haynsworth</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -34,7 +35,19 @@
 
   <footer>
     <div class="row">
-      <div class="three columns">
+      <div class="two columns">
+        <p>&copy; Joan E Haynsworth Art</p>
+      </div>
+      <div class="offset-by-four columns four columns">
+        <ul>
+          <li><a href="https://www.facebook.com/joanhaynsworthart"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+          <li><a href=""><i class="fa fa-envelope-o fa-3x"></i></a></li>
+        </ul>
+<!--         <ul>
+          <li><a href="https://www.facebook.com/joanhaynsworthart"><img src="/assets/FB-f-Logo__blue_29.png" alt=""></a></li>
+        </ul> -->
+      </div>
+      <div class="offset-by-one column one column">
         <% if logged_in? %>
         <ul>
           <li><%= link_to "LOG OUT", logout_path, method: :delete %></li>
