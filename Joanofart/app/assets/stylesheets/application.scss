@@ -50,54 +50,27 @@ header h4 a:hover {
 	color: white;
 }
 
-.home-screen {
-    background-image: url('purple_flower.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%; 
-    // position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;	
-}
-
 a {
 	text-decoration: none;
 }
-
-
-#main-nav {
-	font-size: 24px;
-	border: 1px solid white;
-	border-radius: 5px;
-	background-color: white;
-	opacity: .8;
-	text-align: center;
-	height: auto;
-}
-
-#main-nav a {
-	color: black;
-}
-
-#main-nav li {
-	display: inline-block;
-	font-weight: bold;
-	padding-top: 30px;
-	/*color: white*/
-}
-
-#main-nav a:visited {
-	color: black;
-}
-
 
 body {
 	/*font-family: 'Josefin Sans', sans-serif;*/
 	/*font-family: 'Julius Sans One', sans-serif;*/
 	/*font-family: 'Belleza', sans-serif;*/
 	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+footer {
+	background-color: grey;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	background-size: cover;
+}
+
+footer li {
+	text-decoration: none;
 }
 
 
