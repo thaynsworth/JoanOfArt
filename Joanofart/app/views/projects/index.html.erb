@@ -11,7 +11,7 @@
 		</nav>
 	</div>	
 </div>	 -->
-<div id='cssmenu' class="align-center">
+<div id='project-nav' class="align-center">
 	<div class="container">
 		<div class="row">	
 			<ul class="offset-by-one column">
@@ -29,7 +29,7 @@
 <div id="project-main" class="container">	
 
 	<div class="row">
-		<div class="project-load">
+		<div id="project-load">
 			<table>
 			  <thead>
 			    <tr>
@@ -54,7 +54,7 @@
 		</div>
 	</div>
 
-	<div class="row animals">
+	<div id="animals" class="row initial-display">
 		<table>
 		  <thead>
 		    <tr>
@@ -78,7 +78,7 @@
 		</table>
 	</div>
 
-	<div class="row flowers">
+	<div id="flowers" class="row initial-display">
 		<table>
 		  <thead>
 		    <tr>
@@ -110,10 +110,8 @@
 	
 $(function(){
 
-	$('#cssmenu li').click(function(){
-		
-		var button = $(this).attr('id'),
-				el = $(this);
+	$('#project-nav li').click(function(){
+		var	el = $(this);
 		updateProjects(el);	
 		adjustActiveTab(el);	
 
