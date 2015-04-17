@@ -35,10 +35,10 @@
 
   <footer>
     <div class="row">
-      <div class="two columns">
+      <div class="offset-by-one column two columns">
         <p>&copy; Joan E Haynsworth Art</p>
       </div>
-      <div class="offset-by-four columns four columns">
+      <div class="offset-by-three columns four columns">
         <ul>
           <li><a href="https://www.facebook.com/joanhaynsworthart"><i class="fa fa-facebook-square fa-3x"></i></a></li>
           <li><a href=""><i class="fa fa-envelope-o fa-3x"></i></a></li>
@@ -47,7 +47,7 @@
           <li><a href="https://www.facebook.com/joanhaynsworthart"><img src="/assets/FB-f-Logo__blue_29.png" alt=""></a></li>
         </ul> -->
       </div>
-      <div class="offset-by-one column one column">
+      <div class="two columns">
         <% if logged_in? %>
         <ul>
           <li><%= link_to "LOG OUT", logout_path, method: :delete %></li>
