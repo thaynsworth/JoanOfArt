@@ -114,10 +114,15 @@ display: inline-block;
 footer a {
 	padding: 5px;
 	color: black;
+	transition: .2s;
 }
 
 footer a:visited {
 	color: black;
+}
+
+footer a:hover {
+	color: darkgrey;
 }
 
 

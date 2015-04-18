@@ -18,17 +18,10 @@ function homeButtonAnimate() {
         'opacity': '.8',
       }, 100);
     })
+    console.log('button hover animation')
 }
 
-$(function(){
 
-  mainUnderline();
-  homeButtonAnimate();
-  $('#home-button').on('click', function() {
-    mainUnderline();
-  });
-
-});
 
 
  
