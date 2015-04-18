@@ -67,6 +67,7 @@ a {
 
 #main-nav a {
 	color: black;
+	transition:.3s;
 }
 
 #main-nav li {
@@ -80,6 +81,9 @@ a {
 	color: black;
 }
 
+#main-nav a:hover {
+	color: #737272;
+}
 
 body {
 	/*font-family: 'Josefin Sans', sans-serif;*/
