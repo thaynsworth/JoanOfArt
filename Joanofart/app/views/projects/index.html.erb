@@ -30,9 +30,7 @@
 							<% animals.each do |animal| %>	
 						    <td class="four columns">
 						    	<%=link_to image_tag(animal.avatar.url(:thumb)), project_path(:id => animal.id) %>	
-						    	<p><%= link_to animal.name, project_path(:id => animal.id) %><p>
-						    	<p><%= animal.description %></p>
-						    	<p><%= animal.price %></p>			
+						    	<p><%= link_to animal.name, project_path(:id => animal.id) %><p>		
 						    </td> 
 						  <% end %>   
 						</tr>
@@ -55,9 +53,7 @@
 						<% animals.each do |animal| %>	
 					    <td class="four columns">
 					    	<%=link_to image_tag(animal.avatar.url(:thumb)), project_path(:id => animal.id) %>	
-					    	<p><%= link_to animal.name, project_path(:id => animal.id) %><p>
-					    	<p><%= animal.description %></p>
-					    	<p><%= animal.price %></p>			
+					    	<p><%= link_to animal.name, project_path(:id => animal.id) %><p>		
 					    </td> 
 					  <% end %>   
 					</tr>
@@ -81,8 +77,6 @@
 					    	<%=link_to image_tag(flower.avatar.url(:thumb)), project_path(:id => flower.id) %>
 					    	<div class="description">
 					    	<p><%= link_to flower.name, project_path(:id => flower.id) %><p>
-					    	<p><%= flower.description %></p>
-					    	<p><%= flower.price %></p>
 					    	</div>			
 					    </td> 
 					  <% end %>   
