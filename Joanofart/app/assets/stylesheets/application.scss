@@ -59,14 +59,14 @@ a {
 	font-size: 24px;
 	border: 1px solid white;
 	border-radius: 5px;
-	background-color: white;
-	opacity: .8;
+	background-color: lightgrey;
+	// opacity: .8;
 	text-align: center;
 	height: auto;
 }
 
 #main-nav a {
-	color: black;
+	color: white;
 	transition:.3s;
 }
 
@@ -78,11 +78,11 @@ a {
 }
 
 #main-nav a:visited {
-	color: black;
+	color: white;
 }
 
 #main-nav a:hover {
-	color: #737272;
+	color: black;
 }
 
 body {
