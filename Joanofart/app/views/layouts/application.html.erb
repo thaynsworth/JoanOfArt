@@ -9,7 +9,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <%= favicon_link_tag './public/purple_flower.jpg' %>
+  <%= favicon_link_tag 'purple_flower.jpg' %>
 
 </head>
 <body>
@@ -23,7 +23,7 @@
         <nav class="offset-by-three columns four columns" id="main-nav">
           <ul>
           	<li><%= link_to "ARTWORK", projects_path %></li>
-            <li><%= link_to "ABOUT", about_path %></li>
+            <li><%= link_to "ABOUT THE ARTIST", about_path %></li>
             <li><%= link_to "CONTACT", contact_path %></li>
           </ul>  
         </nav>  
