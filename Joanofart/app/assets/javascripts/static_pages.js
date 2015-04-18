@@ -4,6 +4,7 @@ function mainUnderline() {
     'width':'100%',
     'left': 0
     }, 1500);
+  console.log('underline working?')
 }
 
 function homeButtonAnimate() {
