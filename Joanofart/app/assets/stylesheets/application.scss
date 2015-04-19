@@ -57,7 +57,6 @@ a {
 
 #main-nav {
 	text-align: center;
-	height: auto;
 }
 
 #main-nav a {
@@ -86,8 +85,8 @@ a {
 #main-nav a:hover {
 	background-color: white;
 	color: black;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
+	// border-top: 1px solid black;
+	// border-bottom: 1px solid black;
 	opacity: .7;
 }
 
