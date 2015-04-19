@@ -24,7 +24,8 @@
 			      <th>All Artwork</th>
 			    </tr>
 			    <tr>
-			    	<td>All art is available for purchase. See Contact page for details.</td>
+			    	<td>All of the art is available for purchase. Click <span><%= link_to "here", contact_path %></span> for contact information.</td>
+			    	<td></td>
 			    </tr>
 			  </thead>
 			  <tbody>
@@ -80,6 +81,30 @@
 					    	<%=link_to image_tag(flower.avatar.url(:thumb)), project_path(:id => flower.id) %>
 					    	<div class="description">
 					    	<p><%= link_to flower.name, project_path(:id => flower.id) %><p>
+					    	</div>			
+					    </td> 
+					  <% end %>   
+					</tr>
+				<% end %>
+		  </tbody>
+		</table>
+	</div>
+
+	<div class="row landscapes initial-display">
+		<table>
+		  <thead>
+		    <tr>
+		      <th>Landscapes</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		  	<% @landscapes.in_groups_of(3, false).each do |landscapes| %>
+					<tr>	
+						<% landscapes.each do |landscape| %>	
+					    <td class="four columns">
+					    	<%=link_to image_tag(landscape.avatar.url(:thumb)), project_path(:id => landscape.id) %>
+					    	<div class="description">
+					    	<p><%= link_to landscape.name, project_path(:id => landscape.id) %><p>
 					    	</div>			
 					    </td> 
 					  <% end %>   

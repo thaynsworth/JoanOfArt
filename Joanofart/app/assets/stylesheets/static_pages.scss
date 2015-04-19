@@ -85,22 +85,27 @@
     width: 75%;
 }
 
+#contact {
+    padding-top: 40px;
+}
 
-// #contact img {
-//     height: 100%;
-//     width: 100%;
-//     position: relative;
-//     margin: 40px;
-// }
+#contact h3 {
+    border-bottom: 1px solid black;
+}
+
+#contact li {
+    list-style-type: none;
+}
 
 #marley  {
-    margin: 20px;
+    padding: 30px;
     position: relative; 
     height: 100%;
     width: 100%;    
 }
 
 #marley img {
+    // padding: 20px;
     height: 100%;
     width: 100%;
 }
@@ -108,7 +113,7 @@
 #marley h3 {
     position: absolute; 
     top: 320px; 
-    left: 10px; 
+    left: 153px; 
     width: 100%;     
 }
 
@@ -122,7 +127,7 @@
 }
 
 .statement {
-    padding: 40px;
+    padding-top: 40px;
 }
 
 .statement h3 {
