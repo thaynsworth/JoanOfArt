@@ -85,6 +85,29 @@
     width: 75%;
 }
 
+#contact img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 40px;
+}
+
+.marley h3 {
+   position: absolute;  
+   top: 0;
+   bottom: 0; 
+   width: 100%;  
+   // display: none; 
+   transition: 4s;
+   color: white; 
+   // padding: 10px;
+   // text-align: center;
+}
+
+.marley img:hover {
+    opacity: .8;
+}
+
 .statement {
     padding: 40px;
 }
