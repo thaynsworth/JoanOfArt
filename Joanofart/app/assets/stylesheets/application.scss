@@ -34,10 +34,10 @@ header a {
 }
 
 header h4 {
-	/*font-family: 'Tangerine', cursive;*/
+	// font-family: 'Tangerine', cursive;
 	font-family: 'Josefin Sans', sans-serif;
-	/*font-family: 'Julius Sans One', sans-serif;*/
-	/*font-family: 'Belleza', sans-serif;*/
+	// font-family: 'Julius Sans One', sans-serif;
+	// font-family: 'Belleza', sans-serif;
 	font-size: 40px;
 	text-align: center;
 }
@@ -56,24 +56,26 @@ a {
 
 
 #main-nav {
-	font-size: 24px;
-	border: 1px solid white;
-	border-radius: 5px;
-	background-color: lightgrey;
-	// opacity: .8;
 	text-align: center;
 	height: auto;
 }
 
 #main-nav a {
 	color: white;
-	transition:.3s;
+	transition:.2s;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	margin: 10px;
+
 }
 
 #main-nav li {
 	display: inline-block;
 	font-weight: bold;
 	padding-top: 30px;
+	font-size: 28px;
+	font-weight: bold;
+	color: white;
 	/*color: white*/
 }
 
@@ -82,7 +84,11 @@ a {
 }
 
 #main-nav a:hover {
+	background-color: white;
 	color: black;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	opacity: .7;
 }
 
 body {

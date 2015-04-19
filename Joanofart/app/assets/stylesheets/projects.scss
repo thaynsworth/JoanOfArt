@@ -41,17 +41,22 @@ table {
 }
 
 #show-photo img {
-	box-shadow: 5px 5px 5px black;
+	box-shadow: 3px 3px 3px grey;
 }
 
 #show-description {
 	border: 1px solid black;
-	border-radius: 10px;
+	border-radius: 5px;
 	text-align: center;
 	margin-top: 3em;
 	margin-left:10em;
 	width: 20em;
 	height: auto;
+}
+
+#show-description li {
+  list-style-type: none;
+
 }
 
 // NAV MENU
