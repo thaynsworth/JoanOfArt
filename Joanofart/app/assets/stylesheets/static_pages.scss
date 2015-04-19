@@ -85,6 +85,7 @@
     width: 75%;
 }
 
+
 // #contact img {
 //     height: 100%;
 //     width: 100%;
@@ -92,24 +93,26 @@
 //     margin: 40px;
 // }
 
-.marley  {
+#marley  {
     margin: 20px;
+    position: relative; 
+    height: 100%;
+    width: 100%;    
 }
 
-.marley img {
-    position: relative; 
+#marley img {
     height: 100%;
     width: 100%;
 }
 
-.marley h3 {
+#marley h3 {
     position: absolute; 
     top: 320px; 
-    left: 0; 
+    left: 10px; 
     width: 100%;     
 }
 
-.marley h3 span { 
+#marley h3 span { 
    color: white; 
    font: bold 24px/45px Helvetica, Sans-Serif; 
    letter-spacing: -1px;  
