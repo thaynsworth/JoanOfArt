@@ -5,6 +5,7 @@ function emptyProjects(){
 	$("div.project-load").hide();
 	$("div.animals").hide();
 	$("div.flowers").hide();
+	$("div.landscapes").hide();
 
 }
 
@@ -28,6 +29,12 @@ function updateProjects(obj) {
 			animals.show();
 		});
 		console.log('showing animals');
+	} else if (topic === 'landscape-button') {
+		var landscapes = $('.landscapes');
+		landscapes.fadeIn(400, function(){
+			landscapes.show();
+		});
+		console.log('showing landscapes');
 	}
 }
 
