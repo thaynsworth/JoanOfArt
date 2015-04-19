@@ -5,7 +5,7 @@ class ProjectsController < ApplicationController
     @flowers = Project.where(category: "flowers")
     @animals = Project.where(category: "animals")
     @landscapes = Project.where(category: "landscapes")
-    @greeting = Project.where(category: "greeting cards")
+    @greeting_cards = Project.where(category: "greeting cards")
     @books = Project.where(category: "childrens books")
     @projects = Project.all
   end
