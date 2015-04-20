@@ -21,7 +21,57 @@ function homeButtonAnimate() {
     console.log('button hover animation')
 }
 
+function contactEmailAnimate() {
+  $('#email').mouseenter(function(){
+    $('#email i').animate({
+      'padding-top': '75%'
+    }, 500);
+    $(this).css({
+      'background-color': 'lightgrey'
+    });
+  });
+  $('#email').mouseleave(function(){
+    $('#email i').animate({
+      'padding-top': '50%'
+    }, 400);
+    $(this).css({
+      'background-color': 'white'
+    });    
+  })
+}
 
+function contactFacebookAnimate() {
+  $('#facebook').mouseenter(function(){
+    $('#facebook i').animate({
+      'padding-top': '75%'
+    }, 500);
+    $(this).css({
+      'background-color': 'lightgrey'
+    });
+  });
+  $('#facebook').mouseleave(function(){
+    $('#facebook i').animate({
+      'padding-top': '50%'
+    }, 400);
+    $(this).css({
+      'background-color': 'white'
+    });    
+  })
+}  
+
+function contactMarleyAnimate() {
+  var el = $('.smiley')
+  $('#marley').mouseenter(function(){
+    el.fadeIn(600, function(){
+      el.show();
+    })
+  });
+  $('#marley').mouseleave(function(){
+    el.fadeOut(600, function(){
+      el.hide();
+    })
+  })
+}
 
 
  
