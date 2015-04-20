@@ -24,14 +24,14 @@ function homeButtonAnimate() {
 function contactEmailAnimate() {
   $('#email').mouseenter(function(){
     $('#email ul').animate({
-      'font-size': '22px'
+      'font-size': '21px'
     }, 300);
     $('#email i').addClass('email-color');
     
   });
   $('#email').mouseleave(function(){
     $('#email ul').animate({
-      'font-size': '18px'
+      'font-size': '20px'
     }, 300);
     $('#email i').removeClass('email-color');    
   })
@@ -40,7 +40,7 @@ function contactEmailAnimate() {
 function contactFacebookAnimate() {
   $('#facebook').mouseenter(function(){
     $('#facebook ul').animate({
-      'font-size': '22px'
+      'font-size': '21px'
     }, 300);
     $(this).css({
       'background-color': 'white'
@@ -49,7 +49,7 @@ function contactFacebookAnimate() {
   });
   $('#facebook').mouseleave(function(){
     $('#facebook ul').animate({
-      'font-size': '18px'
+      'font-size': '20px'
     }, 300);
     $(this).css({
       'background-color': 'white'
