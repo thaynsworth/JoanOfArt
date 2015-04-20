@@ -24,7 +24,6 @@ function homeButtonAnimate() {
 function contactEmailAnimate() {
   $('#email').mouseenter(function(){
     $('#email ul').animate({
-      // 'margin-top': '20%',
       'font-size': '22px'
     }, 300);
     $('#email i').addClass('email-color');
@@ -32,7 +31,6 @@ function contactEmailAnimate() {
   });
   $('#email').mouseleave(function(){
     $('#email ul').animate({
-      // 'margin-top': '17%',
       'font-size': '18px'
     }, 300);
     $('#email i').removeClass('email-color');    
@@ -41,20 +39,22 @@ function contactEmailAnimate() {
 
 function contactFacebookAnimate() {
   $('#facebook').mouseenter(function(){
-    $('#facebook i').animate({
-      'padding-top': '75%'
-    }, 500);
-    $(this).css({
-      'background-color': 'lightgrey'
-    });
-  });
-  $('#facebook').mouseleave(function(){
-    $('#facebook i').animate({
-      'padding-top': '50%'
-    }, 400);
+    $('#facebook ul').animate({
+      'font-size': '22px'
+    }, 300);
     $(this).css({
       'background-color': 'white'
-    });    
+    });
+    $('#facebook i').addClass('facebook-color');
+  });
+  $('#facebook').mouseleave(function(){
+    $('#facebook ul').animate({
+      'font-size': '18px'
+    }, 300);
+    $(this).css({
+      'background-color': 'white'
+    });
+    $('#facebook i').removeClass('facebook-color');    
   })
 }  
 
