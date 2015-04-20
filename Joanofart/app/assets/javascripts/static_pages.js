@@ -23,20 +23,19 @@ function homeButtonAnimate() {
 
 function contactEmailAnimate() {
   $('#email').mouseenter(function(){
-    $('#email i').animate({
-      'padding-top': '75%'
-    }, 500);
-    $(this).css({
-      'background-color': 'lightgrey'
-    });
+    $('#email ul').animate({
+      // 'margin-top': '20%',
+      'font-size': '22px'
+    }, 300);
+    $('#email i').addClass('email-color');
+    
   });
   $('#email').mouseleave(function(){
-    $('#email i').animate({
-      'padding-top': '50%'
-    }, 400);
-    $(this).css({
-      'background-color': 'white'
-    });    
+    $('#email ul').animate({
+      // 'margin-top': '17%',
+      'font-size': '18px'
+    }, 300);
+    $('#email i').removeClass('email-color');    
   })
 }
 
