@@ -6,6 +6,7 @@ function emptyProjects(){
 	$("div.animals").hide();
 	$("div.flowers").hide();
 	$("div.landscapes").hide();
+	$("div.greeting-cards").hide();
 
 }
 
@@ -35,6 +36,12 @@ function updateProjects(obj) {
 			landscapes.show();
 		});
 		console.log('showing landscapes');
+	} else if (topic === 'greeting-card-button') {
+		var cards = $('.greeting-cards');
+		cards.fadeIn(400, function(){
+			cards.show();
+		});
+		console.log('showing greeting-cards');
 	}
 }
 
