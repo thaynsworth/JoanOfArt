@@ -49,6 +49,9 @@
 		    <tr>
 		      <th>Animals</th>
 		    </tr>
+		    <tr>
+		    	<td>All of the art is available for purchase. Click <span><%= link_to "here", contact_path %></span> for contact information.</td>
+		    </tr>		    
 		  </thead>
 		  <tbody>
 		  	<% @animals.in_groups_of(3, false).each do |animals| %>
@@ -71,6 +74,9 @@
 		    <tr>
 		      <th>Flowers</th>
 		    </tr>
+		    <tr>
+		    	<td>All of the art is available for purchase. Click <span><%= link_to "here", contact_path %></span> for contact information.</td>
+		    </tr>		    
 		  </thead>
 		  <tbody>
 		  	<% @flowers.in_groups_of(3, false).each do |flowers| %>
@@ -95,6 +101,9 @@
 		    <tr>
 		      <th>Landscapes</th>
 		    </tr>
+		    <tr>
+		    	<td>All of the art is available for purchase. Click <span><%= link_to "here", contact_path %></span> for contact information.</td>
+		    </tr>		    
 		  </thead>
 		  <tbody>
 		  	<% @landscapes.in_groups_of(3, false).each do |landscapes| %>
@@ -119,6 +128,9 @@
 		    <tr>
 		      <th>Greeting Cards</th>
 		    </tr>
+		    <tr>
+		    	<td>Greeting cards are sold individually for $5, or 6 cards for $25. Customized cards are available upon request.  Click <span><%= link_to "here", contact_path %></span> for contact information.</td>
+		    </tr>		    
 		  </thead>
 		  <tbody>
 		  	<% @greeting_cards.in_groups_of(3, false).each do |cards| %>
@@ -141,8 +153,11 @@
 		<table>
 		  <thead>
 		    <tr>
-		      <th>Publications</th>
+		      <th>"Animals I've Met... Sort of"</th>
 		    </tr>
+		    <tr>
+		    	<td>This children's book is a collection of animals Joan painted digitally on her iPad. The book is perfect for all children under 8 years of age. Click <span><%= link_to "here", contact_path %></span> for contact information.</td>
+		    </tr>			    
 		  </thead>
 		  <tbody>
 		  	<% @books.in_groups_of(3, false).each do |books| %>
