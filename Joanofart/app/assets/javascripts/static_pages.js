@@ -62,12 +62,12 @@ function contactFacebookAnimate() {
 function contactMarleyAnimate() {
   var el = $('.smiley')
   $('#marley').mouseenter(function(){
-    el.fadeIn(600, function(){
+    el.slideToggle(600, function(){
       el.show();
     })
   });
   $('#marley').mouseleave(function(){
-    el.fadeOut(600, function(){
+    el.slideToggle(600, function(){
       el.hide();
     })
   })
