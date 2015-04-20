@@ -85,20 +85,34 @@
     width: 75%;
 }
 
-#contact {
-    padding-top: 40px;
+#contact-header {
+    padding-top: 30px;
 }
 
-#contact h3 {
+#contact-header h3 {
     border-bottom: 1px solid black;
 }
 
-#contact li {
-    list-style-type: none;
+#contact-main {
+    padding: 15px;
+}
+
+#email {
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
+    height: 25em;
+}
+
+#facebook {
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
+    height: 25em;    
 }
 
 #marley  {
-    padding: 30px;
+    // padding: 30px;
     position: relative; 
     height: 100%;
     width: 100%;    
