@@ -1,0 +1,27 @@
+
+
+<div class="container">
+	<div class="row">
+		<div class="six columns" id="show-photo">
+			<%= image_tag @project.avatar.url(:large) %>
+		</div>
+		<div class="six columns" id="show-description">
+			<h2><%= @project.name %></h2>
+			<ul>
+				<li><i class="fa fa-paint-brush"></i><%= @project.description %></li>
+				<li><i class="fa fa-usd"></i><%= @project.price %></li>
+				<li><%= link_to "Inquire", contact_path %></li>
+			</ul>
+		<% if logged_in? %>
+			<div class="button"><%= link_to "Edit", edit_project_path(:id => @project.id) %></div>
+	    <%= button_to "Delete", {:controller => :projects,
+	                                 :action => 'destroy',
+	                                     :id => @project.id }, :method => :delete %>		
+		<% else %>
+			<% nil %>
+		<% end %>
+		</div>
+		</div>
+	</div>	
+</div>
+
