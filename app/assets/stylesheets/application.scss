@@ -86,8 +86,10 @@ a {
 	color: white;
 	/*color: white*/
 	transition: 2s;
-	
+
 }
+
+// <%= favicon_link_tag 'purple_flower.jpg' %>
 
 #main-nav a:visited {
 	color: white;
