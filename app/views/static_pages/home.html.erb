@@ -1,0 +1,77 @@
+
+
+
+<div id="home">
+	
+	<div class="container">
+		<div class="row">
+			<div class="offset-by-one column sixteen columns home-main">
+				<h1>Joan Haynsworth Art</h1>
+				<div id="border-bottom"></div>
+				<ul>
+					<li><%= link_to "ARTWORK", projects_path %></li>
+          <li><%= link_to "ABOUT", about_path %></li>
+          <li><%= link_to "CONTACT", contact_path %></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<script>
+$(function(){
+
+  mainUnderline();
+  homeButtonAnimate();
+  $('#home-button').on('click', function() {
+    mainUnderline();
+  });
+
+});	
+</script>
+
+<!-- Slideshow??? -->
+
+<!-- <div class="container">
+	<div class="row">
+
+		<div class="eight columns" id="slideshow">
+			<div>
+				<img src="/assets/ducks.jpg">
+			</div>
+					<div>
+				<img src="/assets/eagles2.jpg">
+			</div>
+					<div>
+				<img src="/assets/elephant.jpg">
+			</div>
+		</div>
+
+
+		<div class="four columns">
+			<p>Joan Haynsworth's artistic talent stretches through all mediums of design and styles. Her passion for nature, food and animals are shown through the pieces she creates.</p>
+			<p></p>
+		</div>
+
+	</div>
+</div>
+
+<script>
+	
+$(function(){	
+
+	$("#slideshow > div:gt(0)").hide();
+
+	setInterval(function() { 
+	  $('#slideshow > div:first')
+	    .fadeOut(3000)
+	    .next()
+	    .fadeIn(3000)
+	    .end()
+	    .appendTo('#slideshow');
+	},  5000);
+
+});
+
+</script> -->
