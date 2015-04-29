@@ -46,4 +46,4 @@ gem "pry"
 
 gem 'rails_12factor', group: :production
 
-gem "sprockets", "2.11.0"
+gem 'sprockets-rails', :require => 'sprockets/railtie'
