@@ -3,8 +3,8 @@
 	padding: 0;
 }
 
-#project-main {
-	
+#project-main td {
+	font-size: 20px;
 }
 
 #project-main p {
@@ -65,7 +65,6 @@ table {
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 #project-nav {
   background: lightgrey;
-  border-top: 1px solid black;
   width: auto;
 }
 #project-nav ul {
