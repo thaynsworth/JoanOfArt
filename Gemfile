@@ -48,5 +48,3 @@ gem "pry"
 gem 'rails_12factor', group: :production
 
 gem 'sprockets-rails', :require => 'sprockets/railtie'
-
-gem 'aws-s3'
