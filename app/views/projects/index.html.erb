@@ -83,7 +83,7 @@
 					<tr>	
 						<% flowers.each do |flower| %>	
 					    <td class="four columns">
-					    	<%=link_to image_tag(flower.avatar.url(:thumb)), project_path(:id => flower.id) %>
+					    	<%=link_to image_tag(flower.avatar.url(:thumb, timestamp:false)), project_path(:id => flower.id) %>
 					    	<div class="description">
 					    	<p><%= link_to flower.name, project_path(:id => flower.id) %><p>
 					    	</div>			
@@ -110,7 +110,7 @@
 					<tr>	
 						<% landscapes.each do |landscape| %>	
 					    <td class="four columns">
-					    	<%=link_to image_tag(landscape.avatar.url(:thumb)), project_path(:id => landscape.id) %>
+					    	<%=link_to image_tag(landscape.avatar.url(:thumb, timestamp:false)), project_path(:id => landscape.id) %>
 					    	<div class="description">
 					    	<p><%= link_to landscape.name, project_path(:id => landscape.id) %><p>
 					    	</div>			
@@ -137,7 +137,7 @@
 					<tr>	
 						<% cards.each do |card| %>	
 					    <td class="four columns">
-					    	<%=link_to image_tag(card.avatar.url(:thumb)), project_path(:id => card.id) %>
+					    	<%=link_to image_tag(card.avatar.url(:thumb, timestamp:false)), project_path(:id => card.id) %>
 					    	<div class="description">
 					    	<p><%= link_to card.name, project_path(:id => card.id) %><p>
 					    	</div>			
@@ -164,7 +164,7 @@
 					<tr>	
 						<% books.each do |book| %>	
 					    <td class="four columns">
-					    	<%=link_to image_tag(book.avatar.url(:thumb)), project_path(:id => book.id) %>
+					    	<%=link_to image_tag(book.avatar.url(:thumb, timestamp:false)), project_path(:id => book.id) %>
 					    	<div class="description">
 					    	<p><%= link_to book.name, project_path(:id => book.id) %><p>
 					    	</div>			
