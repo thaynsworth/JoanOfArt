@@ -58,7 +58,7 @@
 					<tr>	
 						<% animals.each do |animal| %>	
 					    <td class="four columns">
-					    	<%=link_to image_tag(animal.avatar.url(:thumb)), project_path(:id => animal.id) %>	
+					    	<%=link_to image_tag(animal.avatar.url(:thumb, timestamp:false)), project_path(:id => animal.id) %>	
 					    	<p><%= link_to animal.name, project_path(:id => animal.id) %><p>		
 					    </td> 
 					  <% end %>   
