@@ -36,4 +36,13 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
 
   config.assets.raise_production_errors = true
+
+    config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => ENV['S3_BUCKET_NAME'],
+      :access_key_id => ENV['S3_KEY'],
+      :secret_access_key => ENV['S3_SECRET']
+    }
+  }
 end
