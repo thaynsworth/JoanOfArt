@@ -49,4 +49,4 @@ gem 'rails_12factor', group: :production
 
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 
-gem 'aws-sdk'
+gem 'aws-sdk', '< 2.0'
