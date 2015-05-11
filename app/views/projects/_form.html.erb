@@ -1,5 +1,5 @@
 
-  <%= form_for @project do |f| %>
+  <%= form_for (@project, multipart: true) do |f| %>
   	
     <div>
       <%= f.label :name %><br>
