@@ -14,24 +14,28 @@
 </head>
 <body>
 
-  <header>
-    <div >
-      <div class="row">
-        <div class="four columns">
-          <h4 id="home-button"><%= link_to "Joan Haynsworth Art", root_path%></h4>
-        </div>
-        <nav class="offset-by-three columns five columns" id="main-nav">
-          <ul>
-          	<li><%= link_to "ARTWORK", projects_path %></li>
-            <li><%= link_to "ABOUT THE ARTIST", about_path %></li>
-            <li><%= link_to "CONTACT", contact_path %></li>
-          </ul>  
-        </nav>  
-      </div>  
-    </div>
-  </header>
+  <div class="wrapper">
+    <header>
+      <div >
+        <div class="row">
+          <div class="four columns">
+            <h4 id="home-button"><%= link_to "Joan Haynsworth Art", root_path%></h4>
+          </div>
+          <nav class="offset-by-three columns five columns" id="main-nav">
+            <ul>
+            	<li><%= link_to "ARTWORK", projects_path %></li>
+              <li><%= link_to "ABOUT THE ARTIST", about_path %></li>
+              <li><%= link_to "CONTACT", contact_path %></li>
+            </ul>  
+          </nav>  
+        </div>  
+      </div>
+    </header>
 
-  <%= yield %>
+    <%= yield %>
+    
+    <div class="push"></div>
+  </div>
 
   <footer>
     <div class="row">
